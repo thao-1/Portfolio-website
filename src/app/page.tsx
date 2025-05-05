@@ -132,62 +132,130 @@ export default function Portfolio() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="space-y-16">
-          <h2 className="text-8xl font-bold border-b-2 border-yellow-300 dark:border-yellow-700 pb-4">Projects</h2>
-          <div className="grid grid-cols-1 gap-16">
-            {[{
-              title: "AI-Powered Log Analysis Dashboard",
-              description: "Built with scikit-learn, Dash, Plotly, and pandas. Full pipeline from log ingestion to interactive dashboard for anomaly detection and clustering.",
-              link: "https://github.com/thao-1/AI-Powered-Log-Analysis-Dashboard-Project.git",
-              image: LogBotImg
-            }, {
-              title: "RAG Chatbot for Patient Info",
-              description: "RAG model with LangChain, FAISS, OpenAI, and FastAPI. Real-time QA with medical documents and full-stack deployment.",
-              link: "https://github.com/thao-1/RAG-Chatbot-for-Patient-Info.git",
-              image: RagImg
-            }, {
-              title: "Telco Customer Churn Prediction",
-              description: "End-to-end ML pipeline using Random Forest + FastAPI REST API. Robust deployment-ready solution with modular design and logging.",
-              link: "https://github.com/thao-1/Telco-Customer-Churn.git",
-              image: ChurnImg
-            }, {
-              title: "Multi-Agent System with AutoGen",
-              description: "Natural language to SQL app using GPT, OpenAI API, and custom metrics. Supports MySQL, SQLite, PostgreSQL with 100% execution accuracy.",
-              link: "https://github.com/thao-1/Build-a-multi-agent-system-with-Autogen-.git",
-              image: AutoGenImg
-            }, {
-              title: "SnapChat Clone",
-              description: "Built a Snapchat clone using TypeScript, React (Next.js), and Tailwind CSS, implementing core features like stories, spotlight videos, and lenses with responsive UI components.",
-              link: "https://github.com/thao-1/SnapChat-Clone.git",
-              image: SnapChatImg
-            }, {
-              title: "Amazon Clone",
-              description: "Built an Amazon clone using TypeScript, React (Next.js), and Tailwind CSS, implementing core features like product listings, shopping cart, and checkout with responsive UI components.",
-              link: "https://github.com/thao-1/Amazon-Clone.git",
-              image: AmazonImg
-            }, {
-              title: "ScheduleWise",
-              description: "AI scheduling app built with React, Supabase, and OpenAI API for productivity optimization.",
-              link: "https://github.com/thao-1/schedulewise-ai-planner.git",
-              image: ScheduleWiseImg
-            }].map((project, index) => (
-              <div key={index} className="flex flex-col bg-yellow-50 dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                <div className="mb-8 max-w-[300px] mx-auto">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={300}
-                    height={180}
-                    className="rounded-xl object-cover shadow-sm w-full"
-                  />
+        <section id="projects" className="py-16 bg-gray-50 dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">My Projects</h2>
+              <a href="https://github.com/thao-1?tab=repositories" target="_blank" className="text-yellow-600 dark:text-yellow-400 hover:underline text-lg flex items-center">
+                View all
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {[{
+                title: "AI-Powered Log Analysis Dashboard",
+                description: "Built with scikit-learn, Dash, Plotly, and pandas. Full pipeline from log ingestion to interactive dashboard for anomaly detection and clustering.",
+                link: "https://github.com/thao-1/AI-Powered-Log-Analysis-Dashboard-Project.git",
+                image: LogBotImg,
+                tags: ["Python", "ML", "Dashboard"]
+              }, {
+                title: "RAG Chatbot for Patient Info",
+                description: "RAG model with LangChain, FAISS, OpenAI, and FastAPI. Real-time QA with medical documents and full-stack deployment.",
+                link: "https://github.com/thao-1/RAG-Chatbot-for-Patient-Info.git",
+                image: RagImg,
+                tags: ["LLM", "RAG", "FastAPI"]
+              }, {
+                title: "Telco Customer Churn Prediction",
+                description: "End-to-end ML pipeline using Random Forest + FastAPI REST API. Robust deployment-ready solution with modular design and logging.",
+                link: "https://github.com/thao-1/Telco-Customer-Churn.git",
+                image: ChurnImg,
+                tags: ["ML", "API", "Python"]
+              }, {
+                title: "Multi-Agent System with AutoGen",
+                description: "Natural language to SQL app using GPT, OpenAI API, and custom metrics. Supports MySQL, SQLite, PostgreSQL with 100% execution accuracy.",
+                link: "https://github.com/thao-1/Build-a-multi-agent-system-with-Autogen-.git",
+                image: AutoGenImg,
+                tags: ["LLM", "SQL", "Agents"]
+              }, {
+                title: "SnapChat Clone",
+                description: "Built a Snapchat clone using TypeScript, React (Next.js), and Tailwind CSS, implementing core features like stories, spotlight videos, and lenses.",
+                link: "https://github.com/thao-1/SnapChat-Clone.git",
+                image: SnapChatImg,
+                tags: ["React", "TypeScript", "Next.js"]
+              }, {
+                title: "Amazon Clone",
+                description: "Built an Amazon clone using TypeScript, React (Next.js), and Tailwind CSS, implementing core features like product listings, shopping cart, and checkout.",
+                link: "https://github.com/thao-1/Amazon-Clone.git",
+                image: AmazonImg,
+                tags: ["React", "E-commerce", "Next.js"]
+              }].map((project, index) => (
+                <div key={index} className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-gray-700">
+                  <div className="relative h-64 w-full overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-110"
+                      priority={index < 3}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <div className="p-8 flex flex-col flex-grow">
+                    <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">{project.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-6 flex-grow">{project.description}</p>
+                    <div className="mt-auto">
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {project.tags.map((tag, tagIndex) => (
+                          <span key={tagIndex} className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm font-medium">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 dark:bg-yellow-700 dark:hover:bg-yellow-600 transition-colors duration-300 w-full"
+                      >
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className="space-y-6">
-                  <h3 className="text-4xl font-bold text-yellow-500 dark:text-yellow-400">{project.title}</h3>
-                  <p className="text-2xl leading-relaxed">{project.description}</p>
-                  <a href={project.link} target="_blank" className="text-yellow-600 dark:text-yellow-400 hover:underline font-medium text-xl inline-block">View on GitHub →</a>
+              ))}
+            </div>
+
+            {/* Additional Project - ScheduleWise */}
+            <div className="mt-16">
+              <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-gray-100 dark:border-gray-700 max-w-md mx-auto">
+                <div className="relative h-64 w-full overflow-hidden">
+                  <Image
+                    src={ScheduleWiseImg}
+                    alt="ScheduleWise"
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-110"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">ScheduleWise</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 flex-grow">AI scheduling app built with React, Supabase, and OpenAI API for productivity optimization. Intelligent calendar management with AI-powered suggestions.</p>
+                  <div className="mt-auto">
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm font-medium">React</span>
+                      <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm font-medium">AI</span>
+                      <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 rounded-full text-sm font-medium">Supabase</span>
+                    </div>
+                    <a
+                      href="https://github.com/thao-1/schedulewise-ai-planner.git"
+                      target="_blank"
+                      className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 dark:bg-yellow-700 dark:hover:bg-yellow-600 transition-colors duration-300 w-full"
+                    >
+                      View Project
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </section>
 
