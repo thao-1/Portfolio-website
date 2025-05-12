@@ -374,29 +374,7 @@ export default function Portfolio() {
         <section className="space-y-8">
           <h2 className="text-6xl font-semibold border-b-2 border-yellow-300 dark:border-yellow-700 pb-4">Experience</h2>
           <div className="space-y-10">
-            {/* Experience Item 1 */}
-            <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
-              <h3 className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">OpenSource Contributor - ProgramEarth</h3>
-              <p className="text-xl mb-4 text-gray-700 dark:text-gray-300">Contributed to open-source projects with ProgramEarth, gaining hands-on experience in:</p>
-              <ul className="list-disc ml-8 space-y-2">
-                <li className="text-xl text-gray-700 dark:text-gray-300">AI and machine learning implementations</li>
-                <li className="text-xl text-gray-700 dark:text-gray-300">Microservices architecture</li>
-                <li className="text-xl text-gray-700 dark:text-gray-300">Security best practices</li>
-              </ul>
-            </div>
-
-            {/* Experience Item 2 */}
-            <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
-              <h3 className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">Software Engineer - Reality AI Lab</h3>
-              <p className="text-xl mb-4 text-gray-700 dark:text-gray-300">Volunteering as a Software Developer at Marvel AI contributing to impactful open-source AI tools.</p>
-              <ul className="list-disc ml-8 space-y-2">
-                <li className="text-xl text-gray-700 dark:text-gray-300">Supporting global education and career development initiatives</li>
-                <li className="text-xl text-gray-700 dark:text-gray-300">Full-stack JavaScript development</li>
-                <li className="text-xl text-gray-700 dark:text-gray-300">Building accessible AI tools for diverse user groups</li>
-              </ul>
-            </div>
-
-            {/* Experience Item 3 */}
+            {/* Experience Item 1 - OEE IntelliSuite (moved to top) */}
             <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
               <h3 className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">Junior AI/ML Engineer - OEE IntelliSuite</h3>
               <ul className="list-disc ml-8 space-y-2">
@@ -404,6 +382,28 @@ export default function Portfolio() {
                 <li className="text-xl text-gray-700 dark:text-gray-300">Performed data preprocessing and analysis using Python and SQL on high-volume industrial datasets</li>
                 <li className="text-xl text-gray-700 dark:text-gray-300">Prototyped custom AI solutions using TensorFlow</li>
                 <li className="text-xl text-gray-700 dark:text-gray-300">Contributed to SaaS model deployment workflows</li>
+              </ul>
+            </div>
+
+            {/* Experience Item 2 - ProgramEarth with updated description */}
+            <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <h3 className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">OpenSource Contributor - ProgramEarth</h3>
+              <p className="text-xl mb-4 text-gray-700 dark:text-gray-300">Selected for a 10-week open-source fellowship focused on secure, scalable software development.</p>
+              <ul className="list-disc ml-8 space-y-2">
+                <li className="text-xl text-gray-700 dark:text-gray-300">Built full-stack features using React, Vue, TypeScript, GitHub Actions, CI/CD pipelines, and AWS.</li>
+                <li className="text-xl text-gray-700 dark:text-gray-300">Strengthened DevSecOps skills through secure coding, test-driven development, and API authentication with tools like Postman, Auth0, and HashiCorp Vault.</li>
+                <li className="text-xl text-gray-700 dark:text-gray-300">Participated in weekly pair programming, technical writing labs, and workshops on cloud, CI/CD, and developer experience.</li>
+              </ul>
+            </div>
+
+            {/* Experience Item 3 */}
+            <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+              <h3 className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">Software Engineer - Reality AI Lab</h3>
+              <p className="text-xl mb-4 text-gray-700 dark:text-gray-300">Volunteering as a Software Developer at Marvel AI contributing to impactful open-source AI tools.</p>
+              <ul className="list-disc ml-8 space-y-2">
+                <li className="text-xl text-gray-700 dark:text-gray-300">Supporting global education and career development initiatives</li>
+                <li className="text-xl text-gray-700 dark:text-gray-300">Full-stack JavaScript development</li>
+                <li className="text-xl text-gray-700 dark:text-gray-300">Building accessible AI tools for diverse user groups</li>
               </ul>
             </div>
 
