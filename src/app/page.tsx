@@ -90,9 +90,13 @@ export default function Portfolio() {
         {/* Sticky Navbar */}
         <nav className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm py-3 border-b border-yellow-200 dark:border-yellow-900">
           <div className="w-[95%] mx-auto px-4">
-            <ul className="flex gap-8 md:gap-12 justify-end text-lg md:text-xl font-medium">
+            <ul className="flex flex-wrap gap-4 md:gap-6 lg:gap-8 justify-center md:justify-end text-sm md:text-base lg:text-lg font-medium">
               <li><a href="#about" className="hover:text-yellow-600 dark:hover:text-yellow-400">About</a></li>
               <li><a href="#projects" className="hover:text-yellow-600 dark:hover:text-yellow-400">Projects</a></li>
+              <li><a href="#skills" className="hover:text-yellow-600 dark:hover:text-yellow-400">Skills</a></li>
+              <li><a href="#experience" className="hover:text-yellow-600 dark:hover:text-yellow-400">Experience</a></li>
+              <li><a href="#education" className="hover:text-yellow-600 dark:hover:text-yellow-400">Education</a></li>
+              <li><a href="#communities" className="hover:text-yellow-600 dark:hover:text-yellow-400">Communities</a></li>
               <li><a href="#contact" className="hover:text-yellow-600 dark:hover:text-yellow-400">Contact</a></li>
             </ul>
           </div>
@@ -266,7 +270,7 @@ export default function Portfolio() {
         </section>
 
         {/* Skills Section */}
-        <section className="space-y-8">
+        <section id="skills" className="space-y-8">
           <h2 className="text-6xl font-semibold border-b-2 border-yellow-300 dark:border-yellow-700 pb-4">Technical Skills</h2>
           <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl p-8 shadow-md">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -371,7 +375,7 @@ export default function Portfolio() {
         </section>
 
         {/* Experience Section */}
-        <section className="space-y-8">
+        <section id="experience" className="space-y-8">
           <h2 className="text-6xl font-semibold border-b-2 border-yellow-300 dark:border-yellow-700 pb-4">Experience</h2>
           <div className="space-y-10">
             {/* Experience Item 1 - OEE IntelliSuite (moved to top) */}
@@ -459,7 +463,7 @@ export default function Portfolio() {
         </section>
 
         {/* Education & Certs Section */}
-        <section className="space-y-8">
+        <section id="education" className="space-y-8">
           <h2 className="text-6xl font-semibold border-b-2 border-yellow-300 dark:border-yellow-700 pb-4">Education & Certifications</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Education */}
@@ -532,7 +536,7 @@ export default function Portfolio() {
           </div>
 
           {/* Communities Section */}
-          <div className="mt-12">
+          <div id="communities" className="mt-12">
             <h2 className="text-6xl font-semibold border-b-2 border-yellow-300 dark:border-yellow-700 pb-4">Communities</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Rewriting the Code */}
