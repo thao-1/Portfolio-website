@@ -13,6 +13,12 @@ import SnapChatImg from "/public/SnapchatImg.png";
 import AmazonImg from "/public/AmazonImg.png";
 import ScheduleWiseImg from "/public/ScheduleWiseImg.png";
 import BackgroundImg from "/public/Background.jpg";
+import RTCImg from "/public/RTC.png";
+import TGImg from "/public/TG.png";
+import WomenInTechImg from "/public/womenintech.png";
+import ZTMImg from "/public/ZTM.png";
+import ADPListImg from "/public/ADPlist.png";
+import ProgramEarthImg from "/public/programearth.png";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -522,6 +528,108 @@ export default function Portfolio() {
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          {/* Communities Section */}
+          <div className="mt-12">
+            <h3 className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-8">Communities</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Rewriting the Code */}
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={RTCImg}
+                    alt="Rewriting the Code"
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Rewriting the Code</h4>
+                  <p className="text-lg text-gray-700 dark:text-gray-300">Active member of Rewriting the Code, a national community empowering college and early-career women in tech through mentorship, networking, and professional development.</p>
+                </div>
+              </div>
+
+              {/* The Tech Girlies */}
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={TGImg}
+                    alt="The Tech Girlies"
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">The Tech Girlies</h4>
+                  <p className="text-lg text-gray-700 dark:text-gray-300">Engaged in The Tech Girlies community, supporting women and non-binary individuals in tech through inclusive dialogue, opportunities, and resource sharing.</p>
+                </div>
+              </div>
+
+              {/* Women in Tech */}
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={WomenInTechImg}
+                    alt="Women in Tech"
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Women in Tech®</h4>
+                  <p className="text-lg text-gray-700 dark:text-gray-300">Member of Women in Tech® Global Movement, contributing to global efforts to close the gender gap in technology through advocacy and knowledge exchange.</p>
+                </div>
+              </div>
+
+              {/* Zero to Mastery */}
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={ZTMImg}
+                    alt="Zero to Mastery"
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Zero to Mastery (ZTM) Community</h4>
+                  <p className="text-lg text-gray-700 dark:text-gray-300">Participate in the Zero to Mastery learning community to advance technical skills, collaborate with peers, and stay current with software development trends.</p>
+                </div>
+              </div>
+
+              {/* ADPList */}
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={ADPListImg}
+                    alt="ADPList"
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">ADPList</h4>
+                  <p className="text-lg text-gray-700 dark:text-gray-300">Regular mentee and community participant on ADPList, receiving guidance and insights from global tech professionals to grow career and leadership capabilities.</p>
+                </div>
+              </div>
+
+              {/* Program Earth Fellowship */}
+              <div className="bg-white/50 dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={ProgramEarthImg}
+                    alt="Program Earth Fellowship"
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Program Earth Fellowship</h4>
+                  <p className="text-lg text-gray-700 dark:text-gray-300">Selected as a Program Earth Fellow, joining a global network of early-career professionals committed to using technology for social and environmental impact.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
