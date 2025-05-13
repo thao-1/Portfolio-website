@@ -108,7 +108,7 @@ export default function Portfolio() {
             <div className="absolute -inset-6 bg-gradient-to-r from-yellow-200 to-yellow-400 dark:from-yellow-700 dark:to-yellow-500 rounded-full opacity-10 transform rotate-2"></div>
             <Image
               src="/profile.jpeg"
-              alt="Thao Tran"
+              alt="Theo Tran"
               width={300}
               height={300}
               className="rounded-full relative z-10 border-4 border-white dark:border-gray-800 shadow-xl aspect-square object-cover"
@@ -120,7 +120,7 @@ export default function Portfolio() {
             />
           </div>
           <div className="text-center lg:text-left space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold">Thao Tran</h1>
+            <h1 className="text-4xl md:text-5xl font-bold">Theo Tran</h1>
             <div className="space-y-4">
               <p className="text-lg md:text-xl leading-relaxed">
                 I'm a recent Computer Science graduate with a strong focus on AI, machine learning, and full-stack software development. Currently, I'm actively seeking a new graduate role or internship where I can apply my skills and continue learning in a real-world environment.
